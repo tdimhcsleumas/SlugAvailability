@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/SlugAvailability/static/css/main.e6c13ad2.css",
+    "main.js": "/SlugAvailability/static/js/main.122a8cb5.js",
+    "index.html": "/SlugAvailability/index.html",
+    "main.e6c13ad2.css.map": "/SlugAvailability/static/css/main.e6c13ad2.css.map",
+    "main.122a8cb5.js.map": "/SlugAvailability/static/js/main.122a8cb5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.122a8cb5.js"
+  ]
+}
