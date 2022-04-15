@@ -1,6 +1,7 @@
 {
   "name": "slug-availability",
   "version": "0.1.0",
+  "homepage": "https://tdimhcsleumas.github.io/SlugAvailability",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.0",
@@ -16,6 +17,7 @@
     "@types/react-dom": "^17.0.9",
     "@types/react-router": "^5.1.18",
     "firebase": "^9.6.10",
+    "gh-pages": "^3.2.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.3.0",
@@ -24,6 +26,8 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
