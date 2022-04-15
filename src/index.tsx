@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import { 
-    BrowserRouter,
+    HashRouter,
     Routes,
     Route,
 }  from "react-router-dom";
@@ -11,13 +11,13 @@ import EventDetails from "./views/EventDetails";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
         <Routes>
-            <Route path="*" element={<NavBar />}>
+            <Route path="/" element={<NavBar />}>
                 <Route path="events/:eventId" element={<EventDetails />} />
             </Route>
         </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
