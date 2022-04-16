@@ -1,24 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import { 
-    HashRouter,
-    Routes,
-    Route,
-}  from "react-router-dom";
-import NavBar from "./views/NavBar";
-import EventDetails from "./views/EventDetails";
+import { createRoot } from 'react-dom/client';
+import Main from './Main';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <HashRouter>
-        <Routes>
-            <Route path="/" element={<NavBar />}>
-                <Route path="events/:eventId" element={<EventDetails />} />
-            </Route>
-        </Routes>
-    </HashRouter>
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const container = document.getElementById('root');
+const root = createRoot(container!);
+root.render(<Main />);
 

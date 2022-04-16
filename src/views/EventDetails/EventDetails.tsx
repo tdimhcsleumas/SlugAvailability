@@ -7,7 +7,10 @@ const EventDetails = () => {
     return (
         <div>
             <p>Showing: {params.eventId}</p>
-            <AvailabilitySelector />
+            <AvailabilitySelector
+                startTime={1650124800}
+                endTime={1650153600}
+            />
         </div>
     );
 };
